@@ -1,0 +1,25 @@
+img{
+    height:300px;
+}
+strong{
+    color:orange;
+    font-family: "Abyssinica SIL", sans-serif;
+
+
+}
+li{
+    font-style: italic;
+    color: #4267B2;
+}
+p{
+    font-weight: normal;
+}
+.Container{
+    background-color: beige;
+}
+.w3s-validator{
+    height: 50px;
+    display: block;
+    margin-left:auto;
+    margin-right: 80px;
+}
