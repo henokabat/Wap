@@ -1,6 +1,6 @@
 
 body{
-    background-color: white;
+    background-image: url("../images/silverware.jpg");
     color: #404040;
     font-size: 11pt;
     font-family:fantasy;
@@ -46,4 +46,12 @@ a{
 }
 .user-comments{
     background-color: #FFFFA8;
+}
+
+.list-item{
+    background: url('../images/pie_bullet.png') no-repeat left top;
+    list-style-type: none;
+    height: 20px;
+    padding-top: 7px;
+    padding-left: 30px;
 }
