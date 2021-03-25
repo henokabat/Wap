@@ -1,0 +1,49 @@
+
+body{
+    background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family:fantasy;
+}
+h1,h2{
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: "Abyssinica SIL", sans-serif;
+    text-decoration: underline;
+}
+h1{
+    text-align: center;
+    font-size:22pt;
+    font-weight: bold;
+}
+h2{
+    text-align: left;
+    font-size: 18pt;
+}
+
+a{
+   color:  #A4A400;
+}
+.copy-right{
+    font-family: monospace;
+
+}
+.copy-right p{
+    text-align: right;
+    float: left;
+}
+.validators{
+    float: right;
+}
+
+.w3s-validator-icon {
+    height: 50px;
+
+
+}
+.recipe_directions{
+    font-weight: bold;
+}
+.user-comments{
+    background-color: #FFFFA8;
+}

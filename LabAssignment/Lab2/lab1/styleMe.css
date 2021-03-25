@@ -17,9 +17,11 @@ p{
 .Container{
     background-color: beige;
 }
-.w3s-validator{
+.validators{
+    float: right;
+}
+.w3s-validator-icon {
     height: 50px;
-    display: block;
-    margin-left:auto;
-    margin-right: 80px;
+
+
 }
