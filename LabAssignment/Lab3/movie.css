@@ -8,18 +8,44 @@
 
 .banner{
     display: block;
-    alignment: center;
     background-image: url("images/bannerbg.png");
     height: 50px;
 }
 .banner >img{
     text-align: right;
     height: 50px;
-    margin-left: 33%;
+    margin-left: 20%;
 }
 h1{
     text-align: center;
     font-size: 24pt;
     left: auto;
     right: auto;
+    text-shadow: 3px 3px #999999;
+}
+
+.content{
+    margin: auto;
+    width: 60%;
+    left: auto;
+    right: auto;
+    border: 4px gray solid;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+.overview-image{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+.validators{
+    float: right;
 }
