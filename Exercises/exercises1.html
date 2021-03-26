@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overlapping boxex</title>
+    <style>
+        .box1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        .box2{
+            position: fixed;
+            height: 100px;
+            width: 100px;
+            left: 20px;
+            top: 20px;
+            background-color: blue;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>
