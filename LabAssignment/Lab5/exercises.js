@@ -104,12 +104,7 @@ function filterLongWord(words,minWordLength){
 //exercise 8
 
 function computeSumOfSquares(nums){
-    let sum=0;
-    for (let i=0; i<nums.length;i++){
-        sum += (nums[i]*nums[i]);
-    }
-
-    return sum;
+    return  nums.reduce((sum,n)=>sum+(n*n),0);
 }
 //exercise 9
 
@@ -136,17 +131,85 @@ function computeSumOfSquaresOfEvenOnly(nums){
 
 //exercise 11
 
+function sumReduce(nums){
+   return  nums.reduce((sum,n)=>sum+n,0);
+}
 
+//exercise 12
+function findTheSecondBiggest(nums){
+    let big=nums[0];
+    let secondBig=null;
+    for (let i=1;i<nums.length;i++){
+        if (nums[i]>big){
+            secondBig=big;
+            big=nums[i];
+        }else if(nums[i]>secondBig){
+            secondBig=nums[i];
+        }
+    }
 
+    if (secondBig){
+        return secondBig;
+    }else {
+        return "There is no second biggest";
+    }
 
+}
+
+//exercise 13
+
+function printFabo(n,a,b){
+    let seq=[];
+    if (n===0){
+        return;
+    }else if (n===1){
+        seq.push(a);
+    }else if (n===2){
+        seq.push(a);
+        seq.push(b);
+    }else if (n>2){
+        seq.push(a);
+        seq.push(b);
+        for (let i=2;i<n; i++){
+            seq.push(seq[i-2]+seq[i-1]);
+        }
+    }
+  console.log(seq)
+}
+
+// using fab recursion
+// using functional programing
+function printFabonacci(n,a,b){
+    if (n>=2){
+        console.log(a);
+        console.log(b);
+        printF(n-2,a,b)
+    }else if (n===1){
+        console.log(a);
+    }
+}
+
+function printF(n,a,b){
+  if(n>=2){
+      let d=a+b;
+     console.log((d)+" ");
+     printF(--n,b,d)
+  } else if (n===1){
+      console.log(a+b);
+      n--;
+  }
+}
 console.log("max of 23 and 92="+max(24,92));
 console.log("max of -67, 23, 64="+maxOfThree(-67,23,64));
 console.log("is e vowel? "+isVowel("e"));
 console.log("sum of 1 2 3 4 10 ="+sum([1,2,3,4,10]));
-console.log("multiplication o 1 2 3 4 10 =f"+multiply([1,2,3,4,10]));
+console.log("multiplication o 1 2 3 4 10 ="+multiply([1,2,3,4,10]));
 console.log("reverse hello world: "+reverse("hello world"));
 console.log("longest word "+findLongestWord(["hello","henock","Abatihun","knowledge"]));
 console.log(filterLongWord(["hello","henock","Abatihun","knowledge"],5));
 console.log("compute some of square of 7,3 54, 3= "+computeSumOfSquares([7,3,54,3]));
 printOddNumbersOnly([6,4,3,2,5]);
 console.log("compute some of even number square= "+computeSumOfSquaresOfEvenOnly([8,7,6,5,4,3,2,1,2]));
+console.log("sum of 1 2 3 4 10 ="+sumReduce([1,2,3,4,10]));
+console.log("The second biggest of 5,89,45,-10,88 is "+findTheSecondBiggest([4,89,45,-10,88,100]));
+printFabonacci(7,0,1);
