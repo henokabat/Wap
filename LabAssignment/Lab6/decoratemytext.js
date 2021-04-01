@@ -1,7 +1,8 @@
 window.onload = function () {
     const textArea = document.getElementById('textarea');
     textArea.style.fontSize = '12pt';
-    textArea.value = '   ali\n\n     asdasl\n      ';
+    textArea.value = 'henok\n\nbirhane\n';
+    textArea.style.textAlign="right"
 }
 
 function goBigger() {
