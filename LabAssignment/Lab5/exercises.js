@@ -213,3 +213,5 @@ console.log("compute some of even number square= "+computeSumOfSquaresOfEvenOnly
 console.log("sum of 1 2 3 4 10 ="+sumReduce([1,2,3,4,10]));
 console.log("The second biggest of 5,89,45,-10,88 is "+findTheSecondBiggest([4,89,45,-10,88,100]));
 printFabonacci(7,0,1);
+
+window.printFabonacci(4,5,6);
