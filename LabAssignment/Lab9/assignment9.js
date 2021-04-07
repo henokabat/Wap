@@ -48,4 +48,29 @@ window.onload=function (){
     Anna.name="Anna";
     Anna.salary=249995.50;
     Anna.doJob("programmer");
+
+
+    //question number three
+
+let Person2=function (){
+    this.name="";
+    this.dateOfBirth="";
+    this.getName=function () {
+        return this.name;
+    }
+
+    this.setName=function (name) {
+        this.name=name;
+    }
+    this.toString=function () {
+        return "{Name: "+this.getName()+", DateOfBirth "+this.dateOfBirth+"}";
+    }
+}
+
+let peter=new Person2();
+peter.setName("peter");
+peter.dateOfBirth="November 10, 1985";
+
+//test
+    console.log(peter.toString());
 }
